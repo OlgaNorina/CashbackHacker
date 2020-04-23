@@ -9,14 +9,14 @@ public class CashbackBackServiceTest {
 
     @Test
     public void shouldCashBackPlus() {
-        assertEquals(service.remain(2000), 1000);
-        assertEquals(service.remain(900), 100);
-        assertEquals(service.remain(999), 1);
-        assertEquals(service.remain(1001), 999);
+        assertEquals(1000, service.remain(2000));
+        assertEquals(100, service.remain(900));
+        assertEquals(1, service.remain(999));
+        assertEquals(999, service.remain(1001));
     }
 
     @Test
     public void shouldCashBackNoMore(){
-        assertEquals(service.remain(1000), 0);
+        assertEquals(0, service.remain(1000));
     }
 }
