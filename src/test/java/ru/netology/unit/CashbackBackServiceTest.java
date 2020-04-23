@@ -2,7 +2,7 @@ package ru.netology.unit;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class CashbackBackServiceTest {
     CashbackBackService service = new CashbackBackService();
@@ -13,7 +13,6 @@ public class CashbackBackServiceTest {
         assertEquals(service.remain(900), 100);
         assertEquals(service.remain(999), 1);
         assertEquals(service.remain(1001), 999);
-        assertEquals(service.remain(1000), 0);
     }
 
     @Test
