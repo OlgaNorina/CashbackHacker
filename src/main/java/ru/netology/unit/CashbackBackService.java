@@ -1,6 +1,6 @@
 package ru.netology.unit;
 
-public class CashbackHackService {
+public class CashbackBackService {
     private final int boundary = 1000;
 
     public int remain(int amount) {
