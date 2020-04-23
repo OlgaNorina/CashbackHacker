@@ -13,10 +13,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.testng:testng:7.1.0'
-    compile group: 'org.yaml', name: 'snakeyaml', version: '1.23'
+    testImplementation 'junit:junit:4.13'
 }
 
 test {
-    useTestNG()
+    useJUnit()
 }
